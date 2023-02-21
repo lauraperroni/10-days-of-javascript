@@ -1,2 +1,2 @@
 # 10-days-of-javascript
-10 Days of Javascript - Hackerrank
+Minhas atividades do "10 Days of Javascript" do Hackerrank com anotações para tentar ajudar quem estiver com dificuldades!
