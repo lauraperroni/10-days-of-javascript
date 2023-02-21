@@ -1,0 +1,40 @@
+'use strict';
+
+function vowelsAndConsonants(s) {
+    //"s" é a variável que contém a entrada do usuário
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    //delimita quem são as vogais
+    var letters = s.split('');
+    /* diz que a variável "letters" tem o valor de "s" (a entrada do usuário),
+    e tb diz que essa variável tem suas letras separadas por um espaço. */
+    
+    var vowelsFound = [];
+    //cria uma lista vazia para as vogais.
+    var consonantsFound = [];
+    //cria uma lista vazia para as consonantes.
+    
+    for (var i in letters) {
+        if (vowels.includes(letters[i])) {
+        vowelsFound.push(letters[i]);
+         } else {
+            consonantsFound.push(letters[i]);
+        }
+    }
+    /*faz a varredura letra por letra e "ordena" 
+    elas nas listas que criei vazias*/
+
+
+    console.log(vowelsFound.join('\n'));
+    /*essa linha imprime a lista "vowelsFound" e o "join" significa que os elementos
+    dessa lista serão separados por um parâmetro, nesse caso uma nova linha*/
+    console.log(consonantsFound.join('\n'));
+}
+
+
+----------------------------------------
+
+function main() {
+    const s = readLine();
+    
+    vowelsAndConsonants(s);
+}
